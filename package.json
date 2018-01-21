@@ -1,0 +1,42 @@
+{
+  "name": "react-router-global-history",
+  "version": "0.0.1",
+  "description": "Access history from whatever file with react-router-4.",
+  "repository": "https://github.com/Tomekmularczyk/react-package-starter",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "prepare": "webpack --config config/dist.config.js",
+    "dev": "webpack --config config/dist.config.js --progress --colors --watch"
+  },
+  "keywords": [
+    "react-router",
+    "rr4",
+    "history",
+    "global"
+  ],
+  "author": "Tomek",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "react": "^16.1.0",
+    "react-router": "^4.0.0",
+    "webpack": "^3.10.0"
+  },
+  "peerDependencies": {
+    "react": "^16.x",
+    "react-router": "^4.x"
+  },
+  "babel": {
+    "presets": [
+      "react",
+      "env"
+    ]
+  },
+  "dependencies": {}
+}
