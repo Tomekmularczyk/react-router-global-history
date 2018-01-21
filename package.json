@@ -1,7 +1,7 @@
 {
   "name": "react-router-global-history",
   "version": "0.0.3",
-  "description": "Access history react-router-4 history from wherever.",
+  "description": "Access react-router-4 history outside of the component.",
   "repository": "https://github.com/Tomekmularczyk/react-router-global-history",
   "main": "lib/index.js",
   "files": [
