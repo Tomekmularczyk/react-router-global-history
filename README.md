@@ -33,12 +33,10 @@ export const goToPage = () => (dispatch) => {
 ```
 
 That's it! But there's one catch. You need to call `getHistory()` after component has been mounted. For example initialization of redux happens before app renders so if you try to access `history` like: 
-
-*reducer.js*:
+_reducer.js_:
 ```javascript
 import getHistory from 'react-router-global-history'; 
 
 const history = getHistory(); // error!
-};
 ```
 ... you will get an error. So make sure you call it when the `ReactRouterGlobalHistory` component has already been mounted!
