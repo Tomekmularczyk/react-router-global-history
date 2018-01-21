@@ -24,11 +24,21 @@ This will initialize internal `history` variable (on `componentWillReceiveProps`
 Which means you can import it wherever in the app like:
 
 ```javascript
-
 import getHistory from 'react-router-global-history'; 
 
-getHistory().push('/dashboard');
-
+export const goToPage = () => (dispatch) => {
+  dispatch({ type: GO_TO_SUCCESS_PAGE });
+  getHistory().push('/success');
+};
 ```
 
-That's it!
+That's it! But there's one catch. You need to call `getHistory()` after component has been mounted. For example initialization of redux happens before app renders so if you try to access `history` like: 
+
+*reducer.js*:
+```javascript
+import getHistory from 'react-router-global-history'; 
+
+const history = getHistory(); // error!
+};
+```
+... you will get an error. So make sure you call it when the `ReactRouterGlobalHistory` component has already been mounted!
