@@ -1,4 +1,4 @@
-#react-router-global-history
+# react-router-global-history
 
 This is a simple helper library to live alongside `react-router` to help you access history object which you can access
 from the wherever file in your application (like in `redux` actions).

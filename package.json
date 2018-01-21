@@ -2,7 +2,7 @@
   "name": "react-router-global-history",
   "version": "0.0.1",
   "description": "Access history from whatever file with react-router-4.",
-  "repository": "https://github.com/Tomekmularczyk/react-package-starter",
+  "repository": "https://github.com/Tomekmularczyk/react-router-global-history",
   "main": "lib/index.js",
   "files": [
     "lib"
@@ -17,7 +17,7 @@
     "history",
     "global"
   ],
-  "author": "Tomek",
+  "author": "Tomasz Mularczyk",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.26.0",
