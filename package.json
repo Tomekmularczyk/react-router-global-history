@@ -15,7 +15,8 @@
     "react-router",
     "rr4",
     "history",
-    "global"
+    "global",
+    "react"
   ],
   "author": "Tomasz Mularczyk",
   "license": "ISC",

@@ -1,6 +1,6 @@
 # react-router-global-history [![npm version](https://badge.fury.io/js/react-router-global-history.svg)](https://badge.fury.io/js/react-router-global-history)
 
-This is a simple helper library to live alongside `react-router` to help you access `history` object
+This is a simple helper library to live alongside `react-router-4` to help you access `history` object
 from the wherever file in your application (like in `redux` actions).
 
 You simply need to mount component on top of your application like:
@@ -20,7 +20,7 @@ function render() {
   );
 }
 ```
-This will initialize internal `history` variable (on `componentWillReceiveProps` hook) with the one provided by `withRouter` HOC. 
+This will initialize internal `history` variable (on `componentWillMount` hook) with the one provided by `withRouter` HOC. 
 Which means you can import it wherever in the app like:
 
 ```javascript
