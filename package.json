@@ -1,6 +1,6 @@
 {
   "name": "react-router-global-history",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Access react-router-4 history outside of the component.",
   "repository": "https://github.com/Tomekmularczyk/react-router-global-history",
   "main": "lib/index.js",
@@ -28,8 +28,7 @@
     "react": "^16.3.0",
     "react-router": "^4.2.0",
     "webpack": "^4.4.1",
-    "webpack-cli": "^2.0.13",
-    "webpack-node-externals": "^1.6.0"
+    "webpack-cli": "^2.0.13"
   },
   "peerDependencies": {
     "react": "^16.x",
