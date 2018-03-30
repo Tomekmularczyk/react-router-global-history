@@ -1,7 +1,9 @@
 const path = require('path');
 const packageName = require('../package.json').name;
+const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
+  mode: 'production',
 
   entry: {
     index: './src/index.jsx',
@@ -31,24 +33,13 @@ module.exports = {
     ]
   },
 
+  optimization: {
+    minimize: false
+  },
+
   resolve: {
     extensions: ['.js', '.jsx'],
   },
 
-  externals: [
-    {
-      'react': {
-        root: 'React',
-        commonjs2: 'react',
-        commonjs: 'react',
-        amd: 'react'
-      },
-      'react-router': {
-        root: 'ReactRouter',
-        commonjs2: 'react-router',
-        commonjs: 'react-router',
-        amd: 'react-router'
-      }
-    },
-  ],
+  externals: [nodeExternals()],
 };
