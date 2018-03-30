@@ -1,6 +1,6 @@
 {
   "name": "react-router-global-history",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Access react-router-4 history outside of the component.",
   "repository": "https://github.com/Tomekmularczyk/react-router-global-history",
   "main": "lib/index.js",
@@ -25,8 +25,8 @@
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
-    "react": "^16.1.0",
-    "react-router": "^4.0.0",
+    "react": "^16.3.0",
+    "react-router": "^4.2.0",
     "webpack": "^4.4.1",
     "webpack-cli": "^2.0.13",
     "webpack-node-externals": "^1.6.0"

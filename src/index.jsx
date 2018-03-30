@@ -4,16 +4,14 @@ import { withRouter } from 'react-router';
 let globalHistory = null;
 
 class Spy extends React.Component {
-  componentWillMount() {
-    const { history } = this.props;
-    globalHistory = history;
+  static getDerivedStateFromProps(nextProps) {
+    if (globalHistory !== nextProps.history) {
+      globalHistory = nextProps.history;
+    }
+    return null;
   }
 
-  componentWillReceiveProps(nextProps) {
-    globalHistory = nextProps.history;
-  }
-
-  render(){
+  render() {
     return null;
   }
 }
