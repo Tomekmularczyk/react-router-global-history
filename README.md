@@ -20,7 +20,7 @@ function render() {
   );
 }
 ```
-This will initialize internal `history` variable (on `componentWillMount` hook) with the one provided by `withRouter` HOC. 
+This will initialize internal `history` variable (in `constructor`) with the one provided by `withRouter` HOC. 
 Which means you can import it wherever in the app like:
 
 ```javascript
