@@ -9,7 +9,7 @@
     "lib"
   ],
   "scripts": {
-    "prepare": "webpack --config config/dist.config.js",
+    "build": "webpack --config config/dist.config.js",
     "dev": "webpack --config config/dist.config.js --progress --colors --watch"
   },
   "keywords": [

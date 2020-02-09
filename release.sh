@@ -28,19 +28,10 @@ loginToNPM() {
   npm login || exit 1;
 }
 
-runTests() {
-  echo 'Running tests...\n'
-  yarn lint || exit 1;
-  yarn typecheck || exit 1;
-  yarn test --silent --noStackTrace --colors >/dev/null || exit 1;
-  echo '\n'
-}
-
 buildPackage() {
   echo 'Building library...\n'
   rm -rf lib
   yarn build || exit 1;
-  yarn build:declarations || exit 1;
 }
 
 bailoutIfRepoIsNotClean() {
