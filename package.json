@@ -4,6 +4,7 @@
   "description": "Access react-router-4 history outside of the component.",
   "repository": "https://github.com/Tomekmularczyk/react-router-global-history",
   "main": "lib/index.js",
+  "types": "index.d.ts",
   "files": [
     "lib"
   ],
